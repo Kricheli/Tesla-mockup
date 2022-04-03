@@ -1,0 +1,7 @@
+@media(min-width:500px){
+        .menue-nav{
+                display: flex;
+                flex-direction: column;
+                background-color: aqua;
+        }
+}
