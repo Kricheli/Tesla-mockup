@@ -11,74 +11,185 @@
       href="/css/mobile.css"
     />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/ceded70931.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Model 3 | Tesla</title>
   </head>
   <body>
-    
-    <div id="main_page">
-    <header class="page">
-        <nav id="main_nav">
-      <svg id="logo" viewBox="0 0 1000 35" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 \fonts\gotham\styles\screensmart0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z"
-          fill="currentColor"
-        ></path>
-      </svg>
-      
-        <a href="#">Menu</a></nav>
-      </nav>
-        <h1 id="main_header" class="header">
-          Model 3
-        </h1>
-    </header>
-    <section id="icons_container" class="icons">
-    <ul >
-      <li>3.1s</li>
-      <li>358mi</li>
-      <li>AWD</li>
-    </ul>;
-    <a href="#" class="btn wide-btn light-btn">ORDER NOW</a>
-  </div>
-  </section>
 
+
+    <div class="page" id="first_page">
+
+
+      <nav id="navbar">
+        <!-- Logo -->
+        <svg id="logo" viewBox="0 0 1000 35" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 \fonts\gotham\styles\screensmart0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <!-- Menu Button-->
+        <a href="#" id="menu_btn">Menu</a>
+      </nav>
+
+
+      <!-- Heading -->
+      <header id="main_header" class="header">Model 3</header>
+
+
+      <!-- Footer -->
+      <footer id="footer" class="footer_elements">
+
+        <!-- Icons -->
+        <ul class="icons">
+          <li>
+
+            <span class="l-txt">3.1s</span><span class="xs-txt">0.60 mph*</span>
+          </li>
+
+          <li>
+            <span class="l-txt">358mi</span
+            ><span class="xs-txt">Range (EPA est.)</span>
+          </li>
+
+          <li>
+            <span class="l-txt">AWD</span><span class="xs-txt">Dual Motor</span>
+          </li>
+
+        </ul>
+        <!-- Button (Order Now) -->
+
+        <a href="#" id="light_btn" class="btn">ORDER NOW</a>
+
+        <!-- Chevron Animation -->
+
+        <div class="chevron-down">
+
+          <a href="#second_page"><i class="fa-solid fa-chevron-down"></i></a>
+
+        </div>
+      </footer>
+
+
+    </div>
 
     <!-- Second Page -->
-    <section id="second_page" class="page" >
-      <h3 class="inner-mini-header">Safety</h3>
-      <h2 class="inner-header">Built for Safety</h2>
-      <div class="inner-text">
-      <p>Safety is the most important part of every Tesla. We design our vehicles to <a class="link" href="#">exceed safety standards</a>.</p>
-
-        <p><div class="mini-header">5-Star Rating</div>
-        Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.
-      </p><p>
-        <div class="mini-header">Top Safety Pick+</div>
-        Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.</p></div>
-        <div class="footer-buttns">
-         <a class="learn-more-btn btn" href="#">+</a> <span class="btn-text pointer">LEARN MORE</span>
-          <a class="btn wide-btn light-btn" href="#">ORDER NOW</a>
-        </div>
-    </section>
+    <div class="page" id="second_page">
 
 
-    <!-- Third Page -->
-    <section class="page" id="third_page">
-      <img src="media/desktop/riding_carjpg.jpg" alt="red car riding">
-      <h3 class="inner-mini-header">Performance</h3>
-      <h2 class="inner-header">Quickest Acceleration</h2>
-      <div class="inner-text">
-      <p>Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</p>
+      <header>
+        <!-- Main Image -->
+        <img id="second_page_img" src="media/mobile/car_parts_mobile.jpg" alt="car parts">
+        <!-- Heading -->
+        <span class="s-txt">Safety</span
+        ><br/>
+        <span class="mini-header">Built For Safety</span>
+      </header>
+
+
+      <!-- Text -->
+      <article>
+
+
+        <p class="m-txt">
+          Safety is the most important part of every Tesla. We design our
+          vehicles to <a href="#" class="link">exceed safety standards.</a>
+        </p>
+<br/>
+        <p class="m-txt">
+          <span class="bold-txt">5-Star Rating</span><br />
+          Model 3 achieved NHTSA 5-star safety ratings in every category and
+          subcategory.
+        </p>
+        <br/>
+        <p class="m-txt">
+          <span class="bold-txt">Top Safety Pick+</span><br />
+          Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.
+        </p>
+
+      </article>
+
+
+      <!-- Footer Buttons -->
+      <footer  class="footer_btn">
+
+
+        <ul class="icons">
+
+          <li>
+            <a href="#" class="plus-btn dark-hover">+</a> LEARN MORE 
+          </li>
+          <li>
+            <a href="#" class="dark-btn dark-hover">ORDER NOW</a>
+          </li>
+
+      </footer>
+
+
     </div>
-    <div class="footer-buttns">
-      <a class="learn-more-btn btn" href="#">+</a> <span class="btn-text pointer">LEARN MORE</span>
-       <a class="btn wide-btn light-btn" href="#">ORDER NOW</a>
-     </div>
-    </section>
+
+      <!-- Third Page -->
+      <div class="page" id="third_page">
+
+
+        <header>
+
+
+          <!-- Main Image -->
+          <div class="image-container">
+            <ul class="icons">
+    
+              <li>
+                <span class="l-txt">3.1s</span><span class="xs-txt">0.60 mph*</span>
+              </li>
+              <li>
+                <span class="l-txt">358mi</span
+                ><span class="xs-txt">Range (EPA est.)</span>
+              </li>
+              <li>
+                <span class="l-txt">AWD</span><span class="xs-txt">Dual Motor</span>
+              </li>
+            </ul>
+        </div>
+          <!-- Icons -->
+
+        </header>
+
+
+        <article>
+
+          <!-- Text -->
+          <span class="s-txt">Performance </span
+            ><br/><span class="header">Quickest Acceleration</span>
+          <p class="s-txt">
+            Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.
+          </p>
+
+        </article>
+
+
+        <!-- Footer Buttons -->
+        <footer id="footer" class="footer_btn">
+
+
+          <ul class="icons">
+            <li>
+              <a href="#">+</a> LEARN MORE
+            </li>
+            <li>
+              <a href="#" class="btn dark-btn">ORDER NOW</a>
+            </li>
+
+
+        </footer>
+
+        
+      </div>
   </body>
 </html>
