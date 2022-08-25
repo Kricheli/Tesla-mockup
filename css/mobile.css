@@ -41,24 +41,28 @@ ul {
 }
 .plus-btn {
   color: var(--dark-color);
-  font-weight: 400;
-  font-size: 40px;
   border: 3px solid var(--dark-color);
-  padding: 0 0.9rem;
   border-radius: 100%;
-  transition: .5s;
+  width: 50px;
+  height: 50px;
+  padding: .3rem 1REM;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
 }
+  
 .dark-btn {
   color: var(--dark-color);
   border: 4px solid #333;
   font-weight: 500;
   padding: 0.8rem 2rem;
   border-radius: 30px;
-  transition: .5s;
+  transition: 0.5s;
 }
-.dark-hover:hover{
-color: var(--light-color);
-background: var(--dark-color);
+.dark-hover:hover {
+  color: var(--light-color);
+  background: var(--dark-color);
 }
 .btn {
   border: 4px solid #333;
@@ -72,6 +76,7 @@ background: var(--dark-color);
   height: 100vh;
   font-family: var(--font-stack);
 }
+
 /* First Page */
 #first_page {
   background: url(../media/mobile/main_mobile.jpg) no-repeat center center/cover;
@@ -110,14 +115,15 @@ background: var(--dark-color);
   height: 87%;
   justify-content: end;
 }
-#footer .icons {
+.icons {
   display: flex;
 }
-#footer .icons li {
+.icons li {
   display: flex;
   flex-direction: column;
   padding: var(--py-1);
   line-height: 1.5;
+  color: var(--light-color);
 }
 #footer #light_btn {
   border: 4px solid var(--light-color);
@@ -144,7 +150,7 @@ background: var(--dark-color);
 
 /* Second Page */
 #second_page {
-  height: 138vh;
+  height: 120vh;
 }
 #second_page header #second_page_img {
   height: 100%;
@@ -153,9 +159,10 @@ background: var(--dark-color);
 #second_page header span {
   padding: 0 1.5rem;
 }
-#second_page .mini-header {
+.mini-header {
   font-size: 30px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 #second_page article {
   padding: 0.2rem 1.5rem;
@@ -169,28 +176,41 @@ background: var(--dark-color);
 #second_page article a:hover {
   border-bottom-width: 2px;
 }
-#second_page footer ul {
+.icons_btns {
   display: flex;
   justify-content: space-between;
 }
-#second_page footer ul li {
+.icons_btns li {
   padding: 0.5rem 1rem;
   margin: 10px 10px;
-
+  color: var(--dark-color);
 }
-#second_page footer ul li:nth-child(2)  {
-margin-top: 20px;
+.icons_btns li:nth-child(2) {
+  margin-top: 20px;
 }
-
 
 /* Third Page */
-.image-container{
+.image-container {
   width: 100%;
   height: 500px;
-  background: url(../media/desktop/riding_carjpg.jpg) no-repeat center center /cover;
+  background: url(../media/desktop/riding_carjpg.jpg) no-repeat center center /
+    cover;
   position: relative;
+  display: flex;
 }
-#third_page footer .icons li{
-  color: var(--light-color);
+#third_page .icons {
+  position: absolute;
+  left: 8%;
+  top: 70%;
+}
+#third_page article {
+  line-height: 1.5;
+  padding: 0.3rem 1.2rem;
+}
+#third_page article p:first-child {
+  margin: 20px 0;
+}
+#third_page .icons_btns li{
+  margin-bottom: 100px;
+}
 
-}
