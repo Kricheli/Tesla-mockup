@@ -1,0 +1,240 @@
+:root {
+  --light-color: #fff;
+  --dark-color: #333;
+  --gray-color: #f4f4f4;
+  --font-stack: 'Montserrat', sans-serif;
+  --bold-txt: 400;
+  --py-1: 0 1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+ul {
+  list-style: none;
+}
+/* Utilities */
+.l-txt {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.s-txt {
+  font-size: 27px;
+}
+
+.xs-txt {
+  font-size: 15px;
+  letter-spacing: 0.05rem;
+}
+.m-txt {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.bold-txt {
+  font-weight: 600;
+}
+
+.dark-hover:hover {
+  color: var(--light-color);
+  background: var(--dark-color);
+}
+.btn {
+  border: 4px solid #333;
+  padding: 0.8rem 8rem;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.dark-btn {
+  color: var(--dark-color);
+  border: 4px solid #333;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  transition: 0.5s;
+  display: block;
+}
+.plus-btn {
+  color: var(--dark-color);
+  border: 3px solid var(--dark-color);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  padding: .3rem 1rem;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+/* Page Style */
+.page {
+  height: 100vh;
+  font-family: var(--font-stack);
+}
+
+/* First Page */
+#first_page {
+  background: url(../media/mobile/main_mobile.jpg) no-repeat center center/cover;
+  color: var(--light-color);
+  position: relative;
+}
+/* Navbar */
+#first_page #navbar {
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+#first_page #navbar #menu_nav,
+#first_page #navbar #models_nav{
+  display: none;
+}
+
+#first_page #navbar #logo {
+  padding-left: 1rem;
+}
+#first_page #navbar #menu_btn {
+  color: var(--gray-color);
+  font-weight: 600;
+  background: #7a838a;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+}
+#first_page #main_header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 87%;
+  justify-content: end;
+}
+.icons {
+  display: flex;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+}
+.icons li {
+  display: flex;
+  flex-direction: column;
+  padding: var(--py-1);
+  line-height: 1.5;
+  color: var(--light-color);
+}
+#footer #light_btn {
+  border: 4px solid var(--light-color);
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+#footer #light_btn:hover {
+  border-color: var(--light-color);
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+#footer .chevron-down {
+  margin-top: 5px;
+  animation: up-down infinite alternate 0.5s;
+}
+@keyframes up-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+/* Second Page */
+#second_page{
+  height: 200vh;
+}
+#second_page .image-container {
+  width: 100%;
+  height: 500px;
+  background: url(../media/mobile/car_parts_mobile.jpg) no-repeat center center /
+    cover;
+  position: relative;
+  display: flex;
+}
+#second_page header #second_page_img {
+  height: 100%;
+  width: 100%;
+}
+#second_page header span {
+  padding: 0 1.5rem;
+}
+.mini-header {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#second_page article {
+  padding: 0.2rem 1.5rem;
+  margin-top: 30px;
+}
+#second_page article a {
+  color: var(--dark-color);
+  border-bottom: 1px solid #333;
+  transition: 0.1s;
+}
+#second_page article a:hover {
+  border-bottom-width: 2px;
+
+}
+.icons_btns {
+  
+  display: flex;
+  justify-content: space-between;
+}
+.icons_btns li {
+  /* padding: 0.5rem 1rem; */
+  margin: 10px ;
+  color: var(--dark-color);
+  
+
+}
+.icons_btns li:nth-child(2) {
+  margin-top: 20px;
+}
+
+/* Third Page */
+.image-container {
+  width: 100%;
+  height: 500px;
+  background: url(../media/desktop/riding_carjpg.jpg) no-repeat center center /
+    cover;
+  position: relative;
+  display: flex;
+}
+#third_page .icons {
+  position: absolute;
+  top: 70%;
+}
+#third_page article {
+  line-height: 1.5;
+  padding: 0.3rem 1.2rem;
+}
+#third_page article p:first-child {
+  margin: 20px 0;
+}
+#third_page .icons_btns li{
+  margin-bottom: 100px;
+  
+
+}
+
